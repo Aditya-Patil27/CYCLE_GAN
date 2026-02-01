@@ -71,13 +71,13 @@ function BirthdayMessage() {
   return (
     <div className="relative">
       {/* Message Box - Glassmorphism */}
-      <div className="glass-dark rounded-2xl p-3 md:p-6 max-w-xs md:max-w-sm lg:max-w-md mx-auto border border-white/10">
+      <div className="glass-dark rounded-2xl p-2 md:p-6 max-w-[280px] md:max-w-sm lg:max-w-md mx-auto border border-white/10">
         {/* Message Content */}
         <div className="text-center flex flex-col items-center justify-center">
-          <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 neon-text">
+          <h3 className="text-sm md:text-2xl font-bold mb-1 md:mb-3 neon-text">
             🎂 A MESSAGE FOR YOU 🎂
           </h3>
-          <p className="text-white/90 text-lg md:text-xl lg:text-2xl leading-relaxed text-center font-light">
+          <p className="text-white/90 text-xs md:text-xl lg:text-2xl leading-relaxed text-center font-light">
             {/* CUSTOMIZE YOUR MESSAGE HERE */}
             Happiest Birthday Saraf 🥳<br />
             Uss din ka shapat pura kar saleeee 🔥<br />
@@ -114,14 +114,14 @@ function LeaderFrame({ photo }) {
           <img
             src={photo.src}
             alt={photo.name}
-            className="w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-[320px] lg:h-[320px] object-cover"
+            className="w-[120px] h-[120px] md:w-[280px] md:h-[280px] lg:w-[320px] lg:h-[320px] object-cover"
           />
         </div>
       </div>
       {/* Name Tag - Elongated Curved Rectangle */}
-      <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
-        <div className="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 rounded-full px-10 py-3 shadow-[0_0_20px_rgba(255,215,0,0.5)]">
-          <span className="font-bold text-black text-sm md:text-base tracking-wide drop-shadow-sm whitespace-nowrap">{photo.name}</span>
+      <div className="absolute -bottom-6 md:-bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 rounded-full px-4 md:px-10 py-1.5 md:py-3 shadow-[0_0_20px_rgba(255,215,0,0.5)]">
+          <span className="font-bold text-black text-[10px] md:text-base tracking-wide drop-shadow-sm whitespace-nowrap">{photo.name}</span>
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@ function VIPFrame({ photo }) {
           <img
             src={photo.src}
             alt={photo.name}
-            className="w-[140px] h-[140px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] object-cover"
+            className="w-[70px] h-[70px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] object-cover"
           />
         </div>
       </div>
@@ -156,7 +156,7 @@ function SupporterFrame({ photo }) {
           <img
             src={photo.src}
             alt={photo.name}
-            className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] object-cover"
+            className="w-[40px] h-[40px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] object-cover"
           />
         </div>
       </div>
@@ -167,26 +167,26 @@ function SupporterFrame({ photo }) {
 // Header Component - Neon Style
 function Header() {
   return (
-    <div className="absolute top-4 md:top-8 left-0 right-0 z-40 flex flex-col items-center px-4">
+    <div className="absolute top-2 md:top-8 left-0 right-0 z-40 flex flex-col items-center px-2 md:px-4">
       <div className="text-center">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold neon-text tracking-wide">
+        <h2 className="text-base md:text-4xl lg:text-5xl font-bold neon-text tracking-wide">
           HAPPY BIRTHDAY SARAF
         </h2>
       </div>
 
       {/* Minecraft Achievement Box */}
-      <div className="mt-2 md:mt-3">
-        <div className="bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 rounded-lg p-3 md:p-4 shadow-[0_0_20px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)]">
-          <div className="flex items-center gap-3">
+      <div className="mt-1 md:mt-3">
+        <div className="bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 rounded-lg p-2 md:p-4 shadow-[0_0_20px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)]">
+          <div className="flex items-center gap-2 md:gap-3">
             {/* Achievement Icon */}
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded flex items-center justify-center shadow-[inset_0_-2px_4px_rgba(0,0,0,0.3)]">
-              <span className="text-xl md:text-2xl">🏆</span>
+            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded flex items-center justify-center shadow-[inset_0_-2px_4px_rgba(0,0,0,0.3)]">
+              <span className="text-base md:text-2xl">🏆</span>
             </div>
             {/* Achievement Text */}
             <div className="flex flex-col">
-              <span className="text-yellow-400 text-xs md:text-sm font-bold tracking-wide">Achievement Unlocked!</span>
-              <span className="text-white text-sm md:text-base font-bold">Level 21</span>
-              <span className="text-gray-400 text-xs">EST. 2006</span>
+              <span className="text-yellow-400 text-[10px] md:text-sm font-bold tracking-wide">Achievement Unlocked!</span>
+              <span className="text-white text-xs md:text-base font-bold">Level 21</span>
+              <span className="text-gray-400 text-[10px] md:text-xs">EST. 2006</span>
             </div>
           </div>
         </div>
@@ -198,16 +198,16 @@ function Header() {
 // Level Progress Bar Component - Neon Style
 function LevelBar() {
   return (
-    <div className="w-full max-w-xs mx-auto px-4">
+    <div className="w-full max-w-[200px] md:max-w-xs mx-auto px-4">
       {/* Level number in center */}
-      <div className="text-center mb-2">
-        <span className="text-cyan-400 text-lg md:text-xl font-bold" style={{ textShadow: '0 0 10px rgba(6, 182, 212, 0.5)' }}>
+      <div className="text-center mb-1 md:mb-2">
+        <span className="text-cyan-400 text-sm md:text-xl font-bold" style={{ textShadow: '0 0 10px rgba(6, 182, 212, 0.5)' }}>
           21
         </span>
       </div>
 
       {/* Thin XP bar - Neon style */}
-      <div className="relative h-2 md:h-3 bg-black/60 rounded-full overflow-hidden border border-cyan-500/30 neon-bar">
+      <div className="relative h-1.5 md:h-3 bg-black/60 rounded-full overflow-hidden border border-cyan-500/30 neon-bar">
         {/* XP Fill - 1% progress toward level 22 */}
         <div
           className="absolute inset-y-0 left-0 bg-gradient-to-r from-cyan-500 to-cyan-300 rounded-full"
@@ -221,23 +221,23 @@ function LevelBar() {
 // Squad Strip Component
 function SquadStrip({ squadPhotos }) {
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-40 bg-gradient-to-t from-black/90 via-black/60 to-transparent py-4 md:py-6">
+    <div className="absolute bottom-0 left-0 right-0 z-40 bg-gradient-to-t from-black/90 via-black/60 to-transparent py-2 md:py-6">
       {/* Birthday Message - Above Level Bar */}
-      <div className="mb-4 md:mb-6 flex justify-center">
+      <div className="mb-2 md:mb-6 flex justify-center">
         <BirthdayMessage />
       </div>
 
       {/* Level Progress Bar */}
-      <div className="mb-4 md:mb-5">
+      <div className="mb-2 md:mb-5">
         <LevelBar />
       </div>
 
-      <div className="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 flex-wrap px-4">
+      <div className="flex justify-center items-center gap-2 md:gap-4 lg:gap-6 flex-wrap px-2 md:px-4">
         {squadPhotos.map((photo) => (
           <SupporterFrame key={photo.id} photo={photo} />
         ))}
       </div>
-      <p className="text-center mt-3 md:mt-4 text-sm md:text-base font-semibold tracking-wider neon-text">
+      <p className="text-center mt-2 md:mt-4 text-[10px] md:text-base font-semibold tracking-wider neon-text px-2">
         ✨शुभेच्छुक खोली क्रमांक 17 आणि खांड्रे मित्रमंडळ✨
       </p>
     </div>
@@ -289,9 +289,9 @@ function MainPage() {
       </div>
 
       {/* Main Photo Area - Mobile Layout */}
-      <div className="flex md:hidden flex-col items-center justify-start h-full pt-32 pb-96 gap-4 px-4 overflow-y-auto">
+      <div className="flex md:hidden flex-col items-center justify-start h-full pt-24 pb-[340px] gap-2 px-2 overflow-y-auto">
         <LeaderFrame photo={leaderPhoto} />
-        <div className="flex gap-3 mt-2 flex-wrap justify-center">
+        <div className="flex gap-2 mt-4 flex-wrap justify-center">
           {mediumPhotos.map((photo) => (
             <VIPFrame key={photo.id} photo={photo} />
           ))}

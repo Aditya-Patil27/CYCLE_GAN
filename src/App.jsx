@@ -7,9 +7,8 @@ const photos = [
   { id: 3, src: '/bro2.jpeg', name: 'Bro 2', role: 'medium' },
   { id: 4, src: '/squad1.jpeg', name: 'Squad 1', role: 'squad' },
   { id: 5, src: '/squad2.jpeg', name: 'Squad 2', role: 'squad' },
-  { id: 6, src: '/squad3.jpeg', name: 'Squad 3', role: 'squad' },
-  { id: 7, src: '/squad4.jpeg', name: 'Squad 4', role: 'squad' },
-  { id: 8, src: '/squad5.jpeg', name: 'Squad 5', role: 'squad' },
+  { id: 6, src: '/squad4.jpeg', name: 'Squad 4', role: 'squad' },
+  { id: 7, src: '/squad5.jpeg', name: 'Squad 5', role: 'squad' },
 ]
 
 // Login Page Component

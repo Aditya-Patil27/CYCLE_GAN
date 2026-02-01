@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create vite@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "Bash(move \"C:\\\\Users\\\\app27\\\\Downloads\\\\bday\\\\a904dbf395ab1e028cd55cc1a7ee1a02.jpg\" \"C:\\\\Users\\\\app27\\\\Downloads\\\\bday\\\\public\\\\bg.jpg\")"
+    ]
+  }
+}
